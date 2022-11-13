@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dccoppock.github.io/ReactPortfolio",
+  "homepage": "https://dccoppock.github.io/react-portfolio",
   "main": "index.html",
   "dependencies": {
     "@emotion/react": "^11.10.5",
