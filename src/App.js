@@ -7,7 +7,6 @@ import Container from '@mui/material/Container';
 
 export default function App() {
   const [page] = useState([
-    { name: "Home"},
     { name: "About Me"},
     { name: "Portfolio"},
     { name: "Contact"},

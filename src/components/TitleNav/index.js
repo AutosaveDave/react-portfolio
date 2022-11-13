@@ -88,7 +88,8 @@ function TitleNavBar(props) {
               }}
             >
               {page.map((Page) => (
-                <MenuItem key={Page.name} onClick={ () => setCurrentPage(Page) }>
+                <MenuItem key={Page.name} 
+                  onClick={ () => setCurrentPage(Page) }>
                   <Typography textAlign="center">{Page.name}</Typography>
                 </MenuItem>
               ))}
