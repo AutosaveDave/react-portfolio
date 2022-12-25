@@ -29,6 +29,7 @@ export default function ContactBox() {
             label="Name" 
             //variant="outlined"
             defaultValue=""
+            
             />
         </div>
         <div>
@@ -47,6 +48,11 @@ export default function ContactBox() {
             rows={6}
             defaultValue=""
           />
+        </div>
+        <div>
+          {/* <Button>
+            -------------------------------------------------------
+          </Button> */}
         </div>
         <br/>
         <br/>

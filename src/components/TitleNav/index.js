@@ -35,6 +35,11 @@ function TitleNavBar(props) {
     setAnchorElNav(null);
   };
 
+  const handleNavMenuClick = (Page) => {
+    handleCloseNavMenu();
+    setCurrentPage(Page);
+  };
+
   return (
     <AppBar position="absolute">
       <Container maxWidth="xl">
@@ -89,7 +94,7 @@ function TitleNavBar(props) {
             >
               {page.map((Page) => (
                 <MenuItem key={Page.name} 
-                  onClick={ () => setCurrentPage(Page) }>
+                  onClick={ () => handleNavMenuClick(Page) }>
                   <Typography textAlign="center">{Page.name}</Typography>
                 </MenuItem>
               ))}
@@ -118,7 +123,7 @@ function TitleNavBar(props) {
               <Button
                 key={Page.name}
                 onClick={() => setCurrentPage(Page) }
-                sx={{ my: 1, color: 'primary.contrastText', display: 'block' }}
+                variant='nav'
               >
                 {Page.name}
               </Button>
