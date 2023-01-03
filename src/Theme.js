@@ -53,7 +53,7 @@ const themeOptions = {
     },
   },
   components: {
-    Box: {
+    MuiBox: {
       variants: [
         {
           props: {variant: 'projectTitle'},
@@ -61,9 +61,15 @@ const themeOptions = {
             display: 'block',
           },
         },
+        {
+          props: {variant: 'projectDescr'},
+          style: {
+            display: 'block',
+          },
+        },
       ]
     },
-    MuiButton: {
+    MuiPaper: {
       variants: [
         {
           props: { variant: 'project' },
@@ -89,6 +95,10 @@ const themeOptions = {
             }
           },
         },
+      ],
+    },
+    MuiButton: {
+      variants: [
         {
           props: { variant: 'nav'},
           style: {
