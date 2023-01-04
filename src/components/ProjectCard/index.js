@@ -16,6 +16,13 @@ export default function ProjectCard( { project } ) {
     }
   }
 
+  const viewOnGithub = (repoLink) => {
+    const newWindow = window.open(repoLink, '_blank', 'noopener,noreferrer')
+    if (newWindow) {
+      newWindow.opener = null;
+    }
+  }
+
   return (
     <>
       <Paper 
@@ -35,7 +42,6 @@ export default function ProjectCard( { project } ) {
         <Stack 
           display='flex'
           width={1}
-          
           direction='column'
           spacing={1}
           alignItems= {'stretch'}
@@ -73,7 +79,7 @@ export default function ProjectCard( { project } ) {
 
                   }}
                 >
-                  <IconButton color='info'>
+                  <IconButton color='info' onClick={ () => viewOnGithub(link) }>
                     <GitHubIcon fontSize='inherit' />
                   </IconButton>
                 </Box>
