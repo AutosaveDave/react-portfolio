@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Box, Paper, Typography, Stack, IconButton } from '@mui/material';
+import { Box, Paper, Typography, Stack, IconButton, Tooltip, Zoom } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import PreviewIcon from '@mui/icons-material/Preview';
 
 export default function ProjectCard( { project } ) {
 
@@ -16,7 +17,8 @@ export default function ProjectCard( { project } ) {
     }
   }
 
-  const viewOnGithub = (repoLink) => {
+  const iconSX = {color:'info.main', '&:hover':{ color:'error.main'} };
+  const openInNewTab = (repoLink) => {
     const newWindow = window.open(repoLink, '_blank', 'noopener,noreferrer')
     if (newWindow) {
       newWindow.opener = null;
@@ -30,6 +32,8 @@ export default function ProjectCard( { project } ) {
         //fullWidth 
         m={0}
         p={0}
+        onClick={ () => openInNewTab(link) }
+        cursor='pointer'
         sx={{
           height:{xs:'40vh',md:'30vh',lg:'25vh'},
           backgroundImage: imagePath,
@@ -70,20 +74,41 @@ export default function ProjectCard( { project } ) {
                   </Typography>
                 </Box>
 
-                <Box variant='projectDescr' backgroundColor='transparent' width={1} px={2} m={0} 
+                <Box variant='projectDescr' backgroundColor='transparent' width={1} px={0} m={0} 
                   sx= {{
                     display:'flex', 
                     boxSizing: 'border-box', 
-                    justifyContent:'flex-end', 
+                    justifyContent:'space-between', 
                     alignItems:'flex-end'
-
                   }}
                 >
-                  <IconButton color='info' onClick={ () => viewOnGithub(link) }>
-                    <GitHubIcon fontSize='inherit' />
-                  </IconButton>
+                  <Tooltip
+                    TransitionComponent={Zoom}
+                    TransitionProps={{ timeout: 300 }}
+                    title='View Project'
+                    placement='top'
+                    
+                    m={0}
+                    arrow
+                  >
+                    <IconButton color='info' onClick={ () => openInNewTab(link) } sx={iconSX}>
+                      <PreviewIcon fontSize='large' />
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip
+                    TransitionComponent={Zoom}
+                    TransitionProps={{ timeout: 300 }}
+                    title='View on GitHub'
+                    placement='top'
+                    
+                    m={0}
+                    arrow
+                  >
+                    <IconButton color='info' onClick={ () => openInNewTab(repo) } sx={iconSX}>
+                      <GitHubIcon fontSize='large' />
+                    </IconButton>
+                  </Tooltip>
                 </Box>
-              
             </>
           }
         </Stack>
