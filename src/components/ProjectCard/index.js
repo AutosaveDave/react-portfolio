@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Box, Paper, Typography, Stack, IconButton, Tooltip, Zoom } from '@mui/material';
+import { Box, Paper, Typography, Stack, IconButton, Tooltip, Zoom, Fade } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PreviewIcon from '@mui/icons-material/Preview';
 
@@ -32,8 +32,6 @@ export default function ProjectCard( { project } ) {
         //fullWidth 
         m={0}
         p={0}
-        onClick={ () => openInNewTab(link) }
-        cursor='pointer'
         sx={{
           height:{xs:'40vh',md:'30vh',lg:'25vh'},
           backgroundImage: imagePath,
@@ -65,6 +63,8 @@ export default function ProjectCard( { project } ) {
                 <Box variant='projectTitle' backgroundColor='transparent' 
                   width={1} 
                   height={'100%'} 
+                  TransitionComponent={Fade}
+                  TransitionProps={{ timeout: 600 }}
                   px={2} 
                   m={0} 
                   boxSizing= 'border-box'
@@ -87,7 +87,16 @@ export default function ProjectCard( { project } ) {
                     TransitionProps={{ timeout: 300 }}
                     title='View Project'
                     placement='top'
-                    
+                    PopperProps={{
+                      modifiers: [
+                        {
+                          name: 'offset',
+                          options: {
+                            offset: [0,-16],
+                          },
+                        },
+                      ],
+                    }}
                     m={0}
                     arrow
                   >
@@ -100,7 +109,16 @@ export default function ProjectCard( { project } ) {
                     TransitionProps={{ timeout: 300 }}
                     title='View on GitHub'
                     placement='top'
-                    
+                    PopperProps={{
+                      modifiers: [
+                        {
+                          name: 'offset',
+                          options: {
+                            offset: [0,-16],
+                          },
+                        },
+                      ],
+                    }}
                     m={0}
                     arrow
                   >
