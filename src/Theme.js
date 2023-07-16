@@ -96,6 +96,30 @@ const themeOptions = {
         },
       ],
     },
+    MuiModal: {
+      variants: [
+        {
+          props: {variant: 'msgSent'},
+          style: {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: 400,
+            bgcolor: 'background.paper',
+            border: '2px solid primary.main',
+            boxShadow: 24,
+            p: 4,
+          },
+        },
+        {
+          props: {variant: 'msgError'},
+          style: {
+            display: 'block',
+          },
+        },
+      ]
+    },
     MuiButton: {
       variants: [
         {

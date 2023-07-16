@@ -9,7 +9,7 @@ export default function ProjectCard( { project } ) {
 
   const { name, description, link, repo, imagePath, tech } = project;
   const [show, setShow] = useState(false);
-  
+
   const titleTextSX = (showDescr) => {
     if(showDescr) {
       return { color:'primary.contrastText', backgroundColor: 'primary.main' };
@@ -18,7 +18,7 @@ export default function ProjectCard( { project } ) {
     }
   }
 
-  const iconSX = {color:'info.main', '&:hover':{ color:'error.main'} };
+  const iconSX = {color: 'info.main', '&:hover': { color:'error.main'} };
   const openInNewTab = (repoLink) => {
     const newWindow = window.open(repoLink, '_blank', 'noopener,noreferrer')
     if (newWindow) {
@@ -63,8 +63,6 @@ export default function ProjectCard( { project } ) {
                 <Box variant='projectTitle' backgroundColor='transparent' 
                   width={1} 
                   height={'100%'} 
-                  TransitionComponent={Fade}
-                  TransitionProps={{ timeout: 600 }}
                   px={2} 
                   m={0} 
                   boxSizing= 'border-box'
@@ -89,6 +87,7 @@ export default function ProjectCard( { project } ) {
                     TransitionProps={{ timeout: 300 }}
                     title='View Project'
                     placement='top'
+                    
                     PopperProps={{
                       modifiers: [
                         {

@@ -1,10 +1,11 @@
 {
-  "name": "my-app",
+  "name": "react-portfolio",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://dccoppock.github.io/ReactPortfolio",
+  "private": false,
+  "homepage": "https://autosavedave.github.io/react-portfolio/",
   "main": "index.html",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.9",
@@ -21,12 +22,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "nodemon",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
