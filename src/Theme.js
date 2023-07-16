@@ -1,6 +1,5 @@
 //import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
 //import { deepmerge } from '@mui/utils';
-import { TurnedIn } from '@mui/icons-material';
 import { createTheme } from '@mui/material/styles';
 
 const themeColors = {
@@ -115,6 +114,25 @@ const themeOptions = {
         },
       ],
     },
+    MuiChip: {
+      variants: [
+        {
+          props: {variant: 'techListItem'},
+          style: {
+            display: 'inline-flex',
+            color: themeColors.primary.contrastText, 
+            backgroundColor: themeColors.primary.main,
+            //alignItems:'center',
+            justifyContent:'center',
+          },
+        },
+      ]
+    },
+    MuiSvgIcon: {
+      style:{
+        height:'1em',
+      },
+    }
   },
 };
 

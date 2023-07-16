@@ -3,10 +3,11 @@ import { useState } from 'react';
 import { Box, Paper, Typography, Stack, IconButton, Tooltip, Zoom, Fade } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PreviewIcon from '@mui/icons-material/Preview';
+import TechList from './TechList';
 
 export default function ProjectCard( { project } ) {
 
-  const { name, description, link, repo, imagePath } = project;
+  const { name, description, link, repo, imagePath, tech } = project;
   const [show, setShow] = useState(false);
   
   const titleTextSX = (showDescr) => {
@@ -33,7 +34,7 @@ export default function ProjectCard( { project } ) {
         m={0}
         p={0}
         sx={{
-          height:{xs:'40vh',md:'30vh',lg:'25vh'},
+          height:{xs:'75vh',md:'60vh',lg:'50vh'},
           backgroundImage: imagePath,
           flexWrap: 'nowrap',
           position: 'static',
@@ -46,14 +47,13 @@ export default function ProjectCard( { project } ) {
           width={1}
           direction='column'
           spacing={1}
-          alignItems= {'stretch'}
-          justifyContent= {'space-between'}
-          textAlign={'left'}
+          alignItems='stretch'
+          justifyContent='space-between'
+          textAlign='left'
           sx={{ 
             minHeight:'100%', 
           }}
         >
-          
             <Typography textAlign='center' variant='h6' m={0} px={1} py={0} sx={titleTextSX(show)}>
               {name}
             </Typography>
@@ -73,6 +73,8 @@ export default function ProjectCard( { project } ) {
                     {description}
                   </Typography>
                 </Box>
+
+                <TechList tech={tech}/>
 
                 <Box variant='projectDescr' backgroundColor='transparent' width={1} px={0} m={0} 
                   sx= {{

@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import { Container, Paper, Typography, Grid } from "@mui/material";
 import ProjectCard from "../components/ProjectCard/index.js";
 
-
 const Portfolio = () => {
     const [projects] = useState([
         {
-            name: '----**PROJECT1**----',
-            description: '----**DESCR**----',
-            link: "https://github.com",
-            repo: "https://github.com",
-            imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
+            name: 'map-editor',
+            description: 'An orthographic 3d map editor for quick, easy creation of game content. ',
+            tech: ['React','React-bootstrap','Three.js','React-three-fiber','Firebase Auth','Firestore'],
+            link: "https://autosavedave.github.io/map-editor/",
+            repo: "https://github.com/AutosaveDave/map-editor",
+            imagePath: `url(${"https://github.com/AutosaveDave/map-editor/blob/main/map-editor-screenshot.png?raw=true"})`
         },
         {
             name: '----**PROJECT2**----',
             description: '----**DESCR**----',
+            tech: [''],
             link: "https://github.com",
             repo: "https://github.com",
             imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
@@ -22,6 +23,7 @@ const Portfolio = () => {
         {
             name: '----**PROJECT3**----',
             description: '----**DESCR**----',
+            tech: [''],
             link: "https://github.com",
             repo: "https://github.com",
             imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
@@ -29,6 +31,7 @@ const Portfolio = () => {
         {
             name: '----**PROJECT4**----',
             description: '----**DESCR**----',
+            tech: [''],
             link: "https://github.com",
             repo: "https://github.com",
             imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
@@ -36,6 +39,7 @@ const Portfolio = () => {
         {
             name: '----**PROJECT5**----',
             description: '----**DESCR**----',
+            tech: [''],
             link: "https://github.com",
             repo: "https://github.com",
             imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
@@ -43,6 +47,7 @@ const Portfolio = () => {
         {
             name: '----**PROJECT6**----',
             description: '----**DESCR**----',
+            tech: [''],
             link: "https://github.com",
             repo: "https://github.com",
             imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`

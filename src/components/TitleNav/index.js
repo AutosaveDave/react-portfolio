@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,9 +7,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-
 import Button from '@mui/material/Button';
-
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
@@ -21,7 +19,7 @@ function TitleNavBar(props) {
     currentPage,
   } = props;
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   useEffect(() => {
     document.title = currentPage.name;
@@ -60,7 +58,7 @@ function TitleNavBar(props) {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            AutosaveDave
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -116,7 +114,7 @@ function TitleNavBar(props) {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            AutosaveDave
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {page.map((Page) => (
