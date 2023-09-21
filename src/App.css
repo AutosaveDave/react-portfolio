@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #282c34;
+  background-color: #161616;
 }
 .MuiChip-label {
   padding-left:2px !important;
@@ -11,6 +11,15 @@ body {
   padding-left:5px !important;
 }
 
+.MuiTooltip-tooltip {
+  background-color: #003C96 !important;
+  color: white !important;
+  border-radius: 6px !important;
+}
+.MuiTooltip-arrow {
+  color: #003C96 !important;
+  border: 2 solid #3479E3 !important;
+}
 .MuiChip {
   display:inline-flex !important;
   vertical-align: middle !important;

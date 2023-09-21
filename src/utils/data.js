@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactIcon from './icons/ReactIcon';
-import muiIcon from './icons/material-ui-1.svg';
+import MuiIcon from './icons/MuiIcon';
+import ReactBootstrapIcon from './icons/ReactBootstrapIcon';
+import FirebaseIcon from './icons/FirebaseIcon';
+
 export const techIcons = {
     'React': (<ReactIcon/>),
-    'React-bootstrap': '',
-    'Three.js': '',
-    'React-three-fiber': '',
-    'Firebase Auth': '',
-    'Firestore': '',
-    'Mui': muiIcon,
-    default: ''
+    'React-bootstrap': (<ReactBootstrapIcon/>),
+    'Three.js': (<></>),
+    'React-three-fiber': (<></>),
+    'Firebase Auth': (<></>),
+    'Firestore': (<FirebaseIcon/>),
+    'Mui': (<MuiIcon/>),
+    default: (<></>)
 }

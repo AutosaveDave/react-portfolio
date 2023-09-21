@@ -56,7 +56,7 @@ const Portfolio = () => {
 
     return <div>
         <Container maxWidth="xl">
-            <Paper elevation={3} sx={{pb:4, pt:2, minWidth:"sm", minHeight:"600px", maxWidth:"xl"}}>
+            <Paper variant="page" elevation={3} sx={{pb:4, pt:2, minWidth:"sm", minHeight:"600px", maxWidth:"xl"}}>
                 <><Typography variant="h4">Portfolio</Typography></>
                 <br/>
                 <Container maxWidth='95%'>

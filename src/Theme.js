@@ -5,38 +5,41 @@ import { createTheme } from '@mui/material/styles';
 const themeColors = {
   //type: 'dark',
   primary: {
-    main: '#ecca70',
-    contrastText: '#351a1a',
-    light: '#ffe8ac',
+    main: "#E39F17",
+    light: "#FFDA91",
+    dark: "#967533",
+    //contrastText: '#351a1a',
   },
   secondary: {
-    main: '#ffc053',
-    contrastText: '#351a1a',
+    main: "#003C96",
+    light:"#3479E3",
+    dark: "#002357",
+    //contrastText: '#351a1a',
   },
-  background: {
-    default: '#2c2b31',
-    paper: '#5b4a34',
+  tertiary: {
+    main: "#252525",
+    //contrastText: '#351a1a',
   },
   text: {
     primary: '#fff4d9',
   },
   error: {
-    main: '#c14b46',
+    main: "#ff6361",
   },
   warning: {
-    main: '#cc8a33',
+    main: "#bc5090",
   },
   info: {
-    main: '#4470b1',
-    contrastText: '#351a1a',
+    main: "#2c4875",
+    //contrastText: '#351a1a',
   },
   success: {
-    main: '#e8b829',
+    main: "#ffa600",
   },
 }
 
 const themeOptions = {
-  palette: themeColors,
+  palette: { ...themeColors, tonalOffset: 0.3 },
   typography: {
     fontFamily: "Oswald",
     fontWeightLight: 300,
@@ -81,18 +84,42 @@ const themeOptions = {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundBlendMode: 'normal',
-            //textAlign: 'left',
-            border: '3px solid',
-            borderColor: themeColors.primary.light,
-            padding: '5px',
+            borderRadius: '16px',
+            padding: '8px',
             '&:hover': {
-              backgroundColor: themeColors.secondary.main,
+              backgroundColor: themeColors.primary.main,
               backgroundBlendMode: 'soft-light',
-              border: '6px solid',
-              borderColor: themeColors.primary.light,
-              padding: '2px',
+              //border: '6px solid',
+              boxShadow: `0 0 10px 10px ${ themeColors.primary.light } inset`,
+              // borderColor: themeColors.primary.light,
             }
           },
+        },
+        {
+          props: { variant: 'page' },
+          style: {
+            backgroundColor: themeColors.secondary.dark,
+          }
+        },
+      ],
+    },
+    MuiContainer: {
+      variants: [
+        {
+          props: { variant: 'projectTitle' },
+          style: {
+            borderRadius: '8px',
+            backgroundColor: themeColors.primary.main,
+            color: 'black',
+          }
+        },
+        {
+          props: { variant: 'projectTitleHover' },
+          style: {
+            borderRadius: '8px',
+            backgroundColor: themeColors.secondary.main,
+            color: themeColors.secondary.contrastText,
+          }
         },
       ],
     },
@@ -144,9 +171,10 @@ const themeOptions = {
           props: {variant: 'techListItem'},
           style: {
             display: 'inline-flex',
-            color: themeColors.primary.contrastText, 
-            backgroundColor: themeColors.primary.main,
-            //alignItems:'center',
+            color: themeColors.secondary.contrastText, 
+            backgroundColor: themeColors.secondary.light,
+            paddingLeft: '4px',
+            paddingRight: '4px',
             justifyContent:'center',
           },
         },
@@ -156,7 +184,8 @@ const themeOptions = {
       style:{
         height:'1em',
       },
-    }
+    },
+
   },
 };
 
