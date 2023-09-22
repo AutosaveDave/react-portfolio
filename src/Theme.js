@@ -106,10 +106,12 @@ const themeOptions = {
     },
     MuiList: {
       defaultProps:{
+        dense: true,
         style: {
-          backgroundColor: themeColors.primary.light,
+          backgroundColor: themeColors.primary.dark,
           color: 'black',
           padding: '0px',
+          
         },
       }
     },
@@ -164,13 +166,33 @@ const themeOptions = {
         {
           props: { variant: 'nav'},
           style: {
-            my: 1,
+            height: '100%',
             color: themeColors.primary.contrastText, 
             display: 'block',
             backgroundColor: themeColors.primary.main,
             border: 'none',
+            borderRadius: 0,
             '&:hover': {
-              backgroundColor: themeColors.secondary.main,
+              backgroundColor: themeColors.primary.light,
+              border: 'none',
+            }
+          },
+        },
+        {
+          props: { variant: 'navDropdown' },
+          style: {
+            color: themeColors.primary.contrastText, 
+            display: 'block',
+            backgroundColor: themeColors.primary.light,
+            border: 'none',
+            borderRadius: 0,
+            width:'100%',
+            height: '100%',
+            paddingTop: '10px',
+            paddingBottom: '10px',
+            '&:hover': {
+              backgroundColor: themeColors.secondary.light,
+              color: 'white',
               border: 'none',
             }
           },

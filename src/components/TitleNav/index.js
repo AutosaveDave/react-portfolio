@@ -71,7 +71,6 @@ function TitleNavBar(props) {
               <MenuIcon />
             </IconButton>
             <Menu
-              variant='navDropdown'
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -85,14 +84,20 @@ function TitleNavBar(props) {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' }, 
               }}
             >
-              {page.map((Page) => (
-                <MenuItem key={Page.name} 
-                  onClick={ () => handleNavMenuClick(Page) }>
-                  <Typography textAlign="center">{Page.name}</Typography>
+              { page.map( (Page) => (
+                <MenuItem key={ 'navDropItem-' + Page.name } sx={{ p: 0, m: 0 }}>
+                  <Button variant="navDropdown"
+                    key={ 'navDropBtn-' + Page.name }
+                    onClick={ () => handleNavMenuClick(Page) }
+                  >
+                    <Typography key={ 'navDropBtnText-' + Page.name } 
+                        textAlign="center">{Page.name}</Typography>
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
@@ -114,7 +119,7 @@ function TitleNavBar(props) {
           >
             AutosaveDave
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ alignSelf:'stretch', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {page.map((Page) => (
               <Button
                 key={Page.name}

@@ -32,11 +32,10 @@ export default function ProjectCard( { project } ) {
     <>
       <Paper 
         variant='project' 
-        //fullWidth 
         m={0}
         p={0}
         sx={{
-          height:{xs:'75vh',md:'60vh',lg:'50vh'},
+          height:{xs:'22rem',md:'24rem',lg:'20rem'},
           backgroundImage: imagePath,
           flexWrap: 'nowrap',
           position: 'static',
