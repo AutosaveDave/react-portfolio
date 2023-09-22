@@ -85,12 +85,13 @@ const themeOptions = {
             backgroundPosition: 'center',
             backgroundBlendMode: 'normal',
             borderRadius: '16px',
-            padding: '8px',
+            padding: '10px',
+            boxShadow: `0 0 5px 5px ${ themeColors.primary.main } inset`,
             '&:hover': {
               backgroundColor: themeColors.primary.main,
               backgroundBlendMode: 'soft-light',
               //border: '6px solid',
-              boxShadow: `0 0 10px 10px ${ themeColors.primary.light } inset`,
+              boxShadow: `0 0 12px 12px ${ themeColors.primary.light } inset`,
               // borderColor: themeColors.primary.light,
             }
           },
@@ -103,6 +104,15 @@ const themeOptions = {
         },
       ],
     },
+    MuiList: {
+      defaultProps:{
+        style: {
+          backgroundColor: themeColors.primary.light,
+          color: 'black',
+          padding: '0px',
+        },
+      }
+    },
     MuiContainer: {
       variants: [
         {
@@ -111,6 +121,7 @@ const themeOptions = {
             borderRadius: '8px',
             backgroundColor: themeColors.primary.main,
             color: 'black',
+            margin: '2px',
           }
         },
         {
@@ -118,7 +129,8 @@ const themeOptions = {
           style: {
             borderRadius: '8px',
             backgroundColor: themeColors.secondary.main,
-            color: themeColors.secondary.contrastText,
+            color: 'white',
+            margin: '2px',
           }
         },
       ],

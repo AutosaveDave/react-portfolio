@@ -5,7 +5,7 @@ const Contact = () => {
     
   return <div>
     <Container max-width="lg">
-        <Paper max-width="md" elevation={3} mt={2} min-width="sm" min-height="600px">
+        <Paper variant="page" max-width="md" elevation={3} mt={2} min-width="sm" min-height="600px">
             <><Typography variant="h4" pt={2}>Contact</Typography></>
               <br/>
                 <ContactBox />
