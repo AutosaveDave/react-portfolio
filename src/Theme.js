@@ -86,7 +86,7 @@ const themeOptions = {
             backgroundBlendMode: 'normal',
             borderRadius: '16px',
             padding: '10px',
-            boxShadow: `0 0 5px 5px ${ themeColors.primary.main } inset`,
+            boxShadow: `0 0 12px 12px ${ themeColors.secondary.light } inset`,
             '&:hover': {
               backgroundColor: themeColors.primary.main,
               backgroundBlendMode: 'soft-light',
@@ -99,6 +99,7 @@ const themeOptions = {
         {
           props: { variant: 'page' },
           style: {
+            borderRadius: '12px',
             backgroundColor: themeColors.secondary.dark,
           }
         },
@@ -215,8 +216,8 @@ const themeOptions = {
       ]
     },
     MuiSvgIcon: {
-      style:{
-        height:'1em',
+      defaultProps: {
+        height:1,
       },
     },
 

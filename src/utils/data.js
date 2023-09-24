@@ -9,7 +9,7 @@ export const techIcons = {
     'React-bootstrap': (<ReactBootstrapIcon/>),
     'Three.js': (<></>),
     'React-three-fiber': (<></>),
-    'Firebase Auth': (<></>),
+    'Firebase Auth': (<FirebaseIcon/>),
     'Firestore': (<FirebaseIcon/>),
     'Mui': (<MuiIcon/>),
     default: (<></>)

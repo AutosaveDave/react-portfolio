@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import WalrusLogo from '../../utils/icons/WalrusLogo';
 
 function TitleNavBar(props) {
 
@@ -21,7 +21,7 @@ function TitleNavBar(props) {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
-  useEffect(() => {
+  useEffect( () => {
     document.title = currentPage.name;
   }, [currentPage]);
 
@@ -39,10 +39,10 @@ function TitleNavBar(props) {
   };
 
   return (
-    <AppBar position="absolute">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+    <AppBar position="fixed" sx={{ mx: 0, px: 0, }}>
+      <Container sx={{ mx: 0, px: 0, width:1 }} style={{ margin: 0, padding: 0 }}>
+        <Toolbar disableGutters sx={{ mx: 0, px: 0 }}>
+            <WalrusLogo/>
           <Typography
             variant="h5"
             noWrap
@@ -50,6 +50,7 @@ function TitleNavBar(props) {
             href="/"
             sx={{
               mr: 2,
+              ml: 1,
               display: { xs: 'none', md: 'flex' },
               fontWeight: 700,
               color: 'inherit',
@@ -102,19 +103,19 @@ function TitleNavBar(props) {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
             component="a"
             href=""
             sx={{
-              mr: 2,
+              mr: 1,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontWeight: 700,
               color: 'inherit',
               textDecoration: 'none',
+              justifyContent: 'end',
             }}
           >
             AutosaveDave
@@ -122,7 +123,7 @@ function TitleNavBar(props) {
           <Box sx={{ alignSelf:'stretch', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {page.map((Page) => (
               <Button
-                key={Page.name}
+                key={ 'navBtn' + Page.name }
                 onClick={() => setCurrentPage(Page) }
                 variant='nav'
               >
@@ -130,6 +131,7 @@ function TitleNavBar(props) {
               </Button>
             ))}
           </Box>
+          <WalrusLogo hMirror={true} sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
         </Toolbar>
       </Container>
     </AppBar>

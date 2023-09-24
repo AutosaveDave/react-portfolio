@@ -24,3 +24,18 @@ body {
   display:inline-flex !important;
   vertical-align: middle !important;
 }
+
+.walrusBox {
+  aspect-ratio: 1 !important;
+  height: 100% !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.walrusImage {
+  aspect-ratio: 1 !important;
+  align-self: end;
+  justify-self: start;
+  height: 100% !important;
+  width: 'auto' !important;
+}
