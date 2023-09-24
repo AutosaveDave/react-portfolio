@@ -86,7 +86,7 @@ const themeOptions = {
             backgroundBlendMode: 'normal',
             borderRadius: '16px',
             padding: '10px',
-            boxShadow: `0 0 12px 12px ${ themeColors.secondary.light } inset`,
+            boxShadow: `0 0 8px 4px ${ themeColors.secondary.light } inset`,
             '&:hover': {
               backgroundColor: themeColors.primary.main,
               backgroundBlendMode: 'soft-light',
