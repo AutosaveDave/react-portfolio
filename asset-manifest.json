@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5b63aa18.css",
-    "main.js": "/react-portfolio/static/js/main.158e5450.js",
+    "main.js": "/react-portfolio/static/js/main.0c064e34.js",
     "static/media/walrusicon-transparent.svg": "/react-portfolio/static/media/walrusicon-transparent.10657d23e30aea06473c71671297936f.svg",
     "index.html": "/react-portfolio/index.html",
     "main.5b63aa18.css.map": "/react-portfolio/static/css/main.5b63aa18.css.map",
-    "main.158e5450.js.map": "/react-portfolio/static/js/main.158e5450.js.map"
+    "main.0c064e34.js.map": "/react-portfolio/static/js/main.0c064e34.js.map"
   },
   "entrypoints": [
     "static/css/main.5b63aa18.css",
-    "static/js/main.158e5450.js"
+    "static/js/main.0c064e34.js"
   ]
 }
