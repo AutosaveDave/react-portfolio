@@ -7,7 +7,6 @@ import Contact  from '../../pages/Contact';
 
 
 function Page( { currentPage } ) {
-
   const renderPage = () => {
     switch (currentPage.name) {
       case "About Me": return <AboutMe />;
@@ -17,10 +16,8 @@ function Page( { currentPage } ) {
       default: return <AboutMe />;
     }
   };
-
   return (
     <section>
-      {/* <h2>{currentPage.name}</h2> */}
       <div style={{ height:'88px' }} />
       <PageContent>{renderPage()}</PageContent>
     </section>

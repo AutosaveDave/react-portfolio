@@ -88,8 +88,8 @@ const themeOptions = {
             padding: '10px',
             boxShadow: `0 0 8px 4px ${ themeColors.secondary.light } inset`,
             '&:hover': {
-              backgroundColor: themeColors.primary.main,
-              backgroundBlendMode: 'soft-light',
+              backgroundColor: themeColors.primary.light,
+              backgroundBlendMode: 'overlay',
               //border: '6px solid',
               boxShadow: `0 0 12px 12px ${ themeColors.primary.light } inset`,
               // borderColor: themeColors.primary.light,
@@ -206,8 +206,8 @@ const themeOptions = {
           props: {variant: 'techListItem'},
           style: {
             display: 'inline-flex',
-            color: themeColors.secondary.contrastText, 
-            backgroundColor: themeColors.secondary.light,
+            color: 'themeColors.secondary.contrastText', 
+            backgroundColor: themeColors.secondary.main,
             paddingLeft: '4px',
             paddingRight: '4px',
             justifyContent:'center',
