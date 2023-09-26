@@ -65,7 +65,7 @@ export default function ProjectCard( { project } ) {
             <>
               <Box variant='projectTitle' backgroundColor='transparent' 
                 width={1} 
-                height={'100%'} 
+                //height={'100%'} 
                 px={2} 
                 m={0} 
                 boxSizing= 'border-box'

@@ -1,56 +1,35 @@
 import React, { useState } from "react";
 import { Container, Paper, Typography, Grid } from "@mui/material";
 import ProjectCard from "../components/ProjectCard/index.js";
+import mapEditorImage from '../utils/projectScreenshots/map-editor-screenshot.png';
+import whispsImage from '../utils/projectScreenshots/Whisps-html-screenshot4B.png';
+import weatherImage from '../utils/projectScreenshots/WDscreenshot.png';
 
 const Portfolio = () => {
     const [projects] = useState([
         {
-            name: 'map-editor',
+            name: '3D Map Editor',
             description: 'An orthographic 3d map editor for quick, easy creation of game content. ',
             tech: ['React','React-bootstrap','Three.js','React-three-fiber','Firebase Auth','Firestore'],
             link: "https://autosavedave.github.io/map-editor/",
             repo: "https://github.com/AutosaveDave/map-editor",
-            imagePath: `url(${"https://github.com/AutosaveDave/map-editor/blob/main/map-editor-screenshot.png?raw=true"})`
+            imagePath: `url(${ mapEditorImage })`
         },
         {
-            name: '----**PROJECT2**----',
-            description: '----**DESCR**----',
-            tech: [''],
-            link: "https://github.com",
-            repo: "https://github.com",
-            imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
+            name: 'Whisps Overlay',
+            description: 'A single Javascript file that allows web developers to easily add lighting effects to their projects by adding the whisps.js script to the body of an HTML document.',
+            tech: ['HTML', 'Javascript' ],
+            link: "https://autosavedave.github.io/visual-overlays/",
+            repo: "https://github.com/AutosaveDave/visual-overlays",
+            imagePath: `url(${ whispsImage })`
         },
         {
-            name: '----**PROJECT3**----',
-            description: '----**DESCR**----',
-            tech: [''],
-            link: "https://github.com",
-            repo: "https://github.com",
-            imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
-        },
-        {
-            name: '----**PROJECT4**----',
-            description: '----**DESCR**----',
-            tech: [''],
-            link: "https://github.com",
-            repo: "https://github.com",
-            imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
-        },
-        {
-            name: '----**PROJECT5**----',
-            description: '----**DESCR**----',
-            tech: [''],
-            link: "https://github.com",
-            repo: "https://github.com",
-            imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
-        },
-        {
-            name: '----**PROJECT6**----',
-            description: '----**DESCR**----',
-            tech: [''],
-            link: "https://github.com",
-            repo: "https://github.com",
-            imagePath: `url(${"https://github.com/dccoppock/WeatherDashboard/blob/main/assets/images/WDscreenshot.png?raw=true"})`
+            name: 'Weather Dashboard',
+            description: `A web app that allows users to view the current weather and a five-day forecast for any city using openweathermap.org's API.`,
+            tech: ['HTML', 'Javascript', 'CSS' ],
+            link: "https://autosavedave.github.io/WeatherDashboard/",
+            repo: "https://github.com/AutosaveDave/WeatherDashboard",
+            imagePath: `url(${ weatherImage })`
         },
     ]);
 
