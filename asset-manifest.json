@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5b63aa18.css",
-    "main.js": "/react-portfolio/static/js/main.3fb79aeb.js",
+    "main.js": "/react-portfolio/static/js/main.4facb8a0.js",
     "static/media/Whisps-html-screenshot4B.png": "/react-portfolio/static/media/Whisps-html-screenshot4B.ea8f234d3848471c6958.png",
     "static/media/map-editor-screenshot.png": "/react-portfolio/static/media/map-editor-screenshot.f1543ac6292409241259.png",
     "static/media/WDscreenshot.png": "/react-portfolio/static/media/WDscreenshot.faf1c853213dfeb94b25.png",
     "static/media/walrusicon-transparent.svg": "/react-portfolio/static/media/walrusicon-transparent.10657d23e30aea06473c71671297936f.svg",
+    "static/media/cmu-seal-r.svg": "/react-portfolio/static/media/cmu-seal-r.6e0214e38d113c98e4f117723f62f887.svg",
     "index.html": "/react-portfolio/index.html",
     "main.5b63aa18.css.map": "/react-portfolio/static/css/main.5b63aa18.css.map",
-    "main.3fb79aeb.js.map": "/react-portfolio/static/js/main.3fb79aeb.js.map"
+    "main.4facb8a0.js.map": "/react-portfolio/static/js/main.4facb8a0.js.map"
   },
   "entrypoints": [
     "static/css/main.5b63aa18.css",
-    "static/js/main.3fb79aeb.js"
+    "static/js/main.4facb8a0.js"
   ]
 }
