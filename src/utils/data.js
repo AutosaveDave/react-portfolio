@@ -9,6 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import CarnegieMellonSeal from './icons/CarnegieMellonSeal';
 
 export const techIcons = {
     'React': (<ReactIcon/>),
@@ -81,6 +82,7 @@ export const resumeData = {
             school: 'Carnegie Mellon University', 
             location: 'Pittsburgh, PA',
             date: '2010',
+            seal: ( <CarnegieMellonSeal/> ),
         },
         { 
             degree: 'Certificate in full-stack web development', 
@@ -96,9 +98,10 @@ export const resumeData = {
             titles: [
                 { 
                     title: 'Quality Assurance Inspector', 
+                    date: 'Jan. 2020 - May 2020',
                     start: { year: '2020', month: 'January' }, 
                     end: { year: '2020', month: 'May' }, 
-                    location: { city: 'Carlisle', state: 'PA' },
+                    location: 'Carlisle, PA',
                     responsibilities: [
                         'Conducted inspections of manufacturing equipment before operator use',
                         'Calibrated equipment used in quality assurance procedures',
@@ -114,9 +117,10 @@ export const resumeData = {
             titles: [
                 { 
                     title: 'Assistant Quality Assurance Manager', 
+                    date: 'Feb. 2019 - April 2019',
                     start: { year: '2019', month: 'February' }, 
                     end: { year: '2019', month: 'April' }, 
-                    location: { city: 'Glassboro', state: 'NJ' },
+                    location: 'Glassboro, NJ',
                     responsibilities: [
                         'Performed final review of all records to ensure SOP and regulatory compliance',
                         'Conducted staff training for SOP updates',
@@ -133,9 +137,10 @@ export const resumeData = {
                 },
                 { 
                     title: 'Assistant Center Manager', 
+                    date: 'Sept. 2018 - Feb. 2019',
                     start: { year: '2018', month: 'September' }, 
                     end: { year: '2019', month: 'February' }, 
-                    location: { city: 'Cherry Hill', state: 'NJ' },
+                    location: 'Cherry Hill, NJ',
                     responsibilities: [
                         'Reviewed records to ensure FDA, SOP, and cGMP compliance',
                         'Counseled employees on errors found during record review',
@@ -152,10 +157,11 @@ export const resumeData = {
                     ],
                 },
                 { 
-                    title: 'Laboratory Coordinator', 
+                    title: 'Laboratory Coordinator',
+                    date: 'April 2018 - Sept. 2018',
                     start: { year: '2018', month: 'April' }, 
                     end: { year: '2018', month: 'September' }, 
-                    location: { city: 'Cherry Hill', state: 'NJ' },
+                    location: 'Cherry Hill, NJ',
                     responsibilities: [
                         'Supervised laboratory technicians',
                         'Delegated daily tasks to laboratory technicians',
@@ -169,9 +175,10 @@ export const resumeData = {
                 },
                 { 
                     title: 'Laboratory Technician', 
+                    date: 'Oct. 2017 - April 2018',
                     start: { year: '2017', month: 'October' }, 
                     end: { year: '2018', month: 'April' }, 
-                    location: { city: 'Cherry Hill', state: 'NJ' },
+                    location: 'Cherry Hill, NJ',
                     responsibilities: [
                         'Processed collections, compensated donors, and processed plasma bottles per FDA, SOP, and cGMP requirements',
                         'Extracted samples from plasma bottles for further testing and inspected such samples',
@@ -187,9 +194,10 @@ export const resumeData = {
             titles: [
                 { 
                     title: 'Independent Game Developer', 
+                    date: 'March, 2013 - Oct. 2017',
                     start: { year: '2013', month: 'March' }, 
-                    end: { year: '2017', month: 'October' }, 
-                    location: { city: 'Philadelphia', state: 'PA' },
+                    end: { year: '2017', month: 'Oct.' }, 
+                    location: 'Philadelphia, PA',
                     responsibilities: [
                         'Designed game systems and mechanics',
                         'Created graphic and audio assets for games',
@@ -204,9 +212,10 @@ export const resumeData = {
             titles: [
                 { 
                     title: 'Lab Pack Chemist', 
+                    date: 'June 2012 - Feb. 2013',
                     start: { year: '2012', month: 'June' }, 
                     end: { year: '2013', month: 'February' }, 
-                    location: { city: 'Bridgeport', state: 'NJ' },
+                    location: 'Bridgeport, NJ',
                     responsibilities: [
                         'Traveled to customer sites to pick up hazardous waste',
                         'Prepared paperwork for transportation of hazardous waste',
@@ -224,9 +233,10 @@ export const resumeData = {
             titles: [
                 { 
                     title: 'Environmental Compliance Specialist', 
+                    date: 'Oct. 2010 - Feb.2012',
                     start: { year: '2010', month: 'October' }, 
                     end: { year: '2012', month: 'February' }, 
-                    location: { city: 'Atlanta', state: 'GA' },
+                    location: 'Atlanta, GA',
                     responsibilities: [
                         'Collected and classified chemical waste by EPA waste codes for disposal',
                         'Collected and processed radioactive waste for decay and disposal',
@@ -242,41 +252,6 @@ export const resumeData = {
                     ],
                 },
             ],
-        },
-        {
-            company: 'Carnegie Mellon University, Environmental Health & Safety',
-            titles: [
-                { 
-                    title: 'Safety Technician', 
-                    start: { year: '2009', month: 'June' }, 
-                    end: { year: '2009', month: 'August' }, 
-                    location: { city: 'Pittsburgh', state: 'PA' },
-                    responsibilities: [
-                        'Handled and disposed of hazardous waste',
-                        'Worked with ChemTracker chemical inventory system',
-                        'Performed laboratory inspections to ensure regulatory compliance',
-                        'Certified chemical fume hoods for sufficient airflow',
-                    ],
-                },
-            ],
-        },
-        {
-            company: 'Carnegie Mellon University, Chemistry Department',
-            titles: [
-                { 
-                    title: 'Undergraduate Research Assistant', 
-                    start: { year: '2008' }, 
-                    end: { year: '2009' }, 
-                    location: { city: 'Pittsburgh', state: 'PA' },
-                    responsibilities: [
-                        'Prepared samples for use with Stark spectroscopy',
-                        'Performed Stark spectroscopy',
-                    ]
-                },
-            ],
-            /*
-              
-            */
         },
     ],
     /*

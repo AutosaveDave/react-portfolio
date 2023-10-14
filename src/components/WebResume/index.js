@@ -10,7 +10,10 @@ import WResExperience from "./WResExperience";
 
 const WebResume = () => {
     return ( <>
-      <Box position='absolute' top={0} left='20%' right='20%' height='4em' zIndex={2}>
+      <Box position='absolute' top={0} height='4em' zIndex={2}
+        sx={{ left: { xs:'10%', sm:'15%', md:'20%', lg:'25%' }, 
+            right:  { xs:'10%', sm:'15%', md:'20%', lg:'25%' }, }}
+      >
         <WResName _name={ resumeData.fullName } _tagline={ resumeData.tagline }/>
       </Box>
       <Box max-width="lg" height='100%' >

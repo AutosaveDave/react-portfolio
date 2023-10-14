@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Stack } from "@mui/material";
+//import CarnegieMellonSeal from "../../utils/icons/CarnegieMellonSeal";
 
 const WResEducation = ( { education } ) => {
   const EducationItem = ( { _eduItem } ) => ( <>
