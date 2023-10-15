@@ -10,6 +10,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CarnegieMellonSeal from './icons/CarnegieMellonSeal';
+import UPennSeal from './icons/UPennSeal';
 
 export const techIcons = {
     'React': (<ReactIcon/>),
@@ -44,7 +45,8 @@ export const resumeData = {
         Github: 'github.com/autosavedave',
     },
     // -------------------- BRAND STATEMENT
-    statement: `Full-stack web developer with a B.S. in chemistry from Carnegie Mellon University, a certificate in full stack development from University of Pennsylvania LPS Coding Bootcamp, and over 20 years of experience making 2D games for PC and mobile as a hobby. Always looking for innovative, elegant solutions that take into account future plans for any given project.`,
+    statement:'Experienced scientist and lab manager looking to join your tram as a recently certified FullStack Web Developer with numerous transferrable skills. 20 years of experience making 2D games for PC and mobile have confirmed a lasting interest in this work. Creative thinker with the ability to manage wide-ranging client demands to build innovative, elegant solutions.',
+    //statement: `Full-stack web developer with a B.S. in chemistry from Carnegie Mellon University, a certificate in full stack development from University of Pennsylvania LPS Coding Bootcamp, and over 20 years of experience making 2D games for PC and mobile as a hobby. Always looking for innovative, elegant solutions that take into account future plans for any given project.`,
     // -------------------- TECH SKILLS
     skills: {
         Frontend: [
@@ -88,7 +90,8 @@ export const resumeData = {
             degree: 'Certificate in full-stack web development', 
             school: 'University of Pennsylvania LPS Coding Bootcamp', 
             location: 'Philadelphia, PA',
-            date: '2022'
+            date: '2022',
+            seal: ( <UPennSeal/> ),
         },
     ],
     // -------------------- WORK EXPERIENCE
@@ -107,8 +110,7 @@ export const resumeData = {
                         'Calibrated equipment used in quality assurance procedures',
                         'Sampled and inspected product to ensure cGMP compliance',
                         'Conducted routine reviews of records to ensure cGMP compliance',
-                        'Kept detailed records of inspections, test results, and record reviews to ensure cGMP compliance',
-                    ]
+                    ],
                 },
             ],
         },
@@ -122,17 +124,12 @@ export const resumeData = {
                     end: { year: '2019', month: 'April' }, 
                     location: 'Glassboro, NJ',
                     responsibilities: [
-                        'Performed final review of all records to ensure SOP and regulatory compliance',
-                        'Conducted staff training for SOP updates',
-                        'Performed final review of all outbound sample and product shipments',
-                        'Investigated concerns related to donor and product safety',
-                        'Performed final review of outbound correspondence with consignee',
+                        'Oversaw the receipt and Investigation of over 100 donor and employee concerns',
+                        'Wrote audit reports and coordinated corrective action in response to findings',
+                        'Coordinated corrective action for low to mid-level infractions for over 50 staff members',
                         'Performed facility, equipment, and staff audits to ensure SOP and regulatory compliance',
-                        'Wrote audit reports including recommendations for corrective action',
-                        'Coordinated corrective action with management in response to audit findings',
+                        'Prepared and performed final review of all outbound sample and product shipments; approximately 30,000 units',
                         'Performed calibration and qualification of center equipment',
-                        'Prepared and performed shipment of plasma products',
-                        'Managed center reagent inventory lot number control',
                     ],
                 },
                 { 
@@ -142,18 +139,12 @@ export const resumeData = {
                     end: { year: '2019', month: 'February' }, 
                     location: 'Cherry Hill, NJ',
                     responsibilities: [
-                        'Reviewed records to ensure FDA, SOP, and cGMP compliance',
-                        'Counseled employees on errors found during record review',
-                        'Handled positive donor test results and counseled donors on positive results',
-                        'Investigated donor and employee concerns',
-                        'Managed staff schedules and time-off requests',
-                        `Trained staff on SOP's and conducted portions of new-hire orientation`,
-                        'Conducted staff performance reviews and wrote reports detailing each review',
-                        'Managed center inventory and ordered new supplies as needed',
-                        'Corresponded with consignee regarding any product safety concerns',
-                        'Prepared and performed shipment of plasma products',
+                        'Directly supervised 70-80 full-time medical professionals and administrative staff',
+                        'Oversaw the interview, hiring, and onboarding of all staff positions',
+                        'Managed multiple aspects of staff operations; schedules and time-off requests, training, and performance reviews',
                         'Created Excel macro to simplify and expedite review of plasma collection records',
-                        'Interviewed job applicants for all staff positions',
+                        'Handled positive donor test results and counseled donors on positive results',
+                        'Reviewed records to ensure FDA, SOP, and cGMP compliance',
                     ],
                 },
                 { 
@@ -163,14 +154,12 @@ export const resumeData = {
                     end: { year: '2018', month: 'September' }, 
                     location: 'Cherry Hill, NJ',
                     responsibilities: [
-                        'Supervised laboratory technicians',
-                        'Delegated daily tasks to laboratory technicians',
-                        'Inspected cases of plasma in preparation for shipment',
-                        'Created issues in the NextGen issue tracking system to document incidents and accidents',
-                        'Worked with QA and management to implement improvements in laboratory efficiency',
-                        `Trained laboratory technicians and medical assistants on SOP's`,
-                        'Communicated with members of management and QA via email to ensure smooth center operation',
-                        'Performed all B Positive laboratory technician duties outlined below',
+                       'Supervised 12 laboratory technicians ',
+                       'Inspected cases of plasma against regulatory requirements before shipment',
+                       'Documented incidents and accidents in the NextGen issue tracking system',
+                       'Worked with QA and management to implement improvements in laboratory efficiency',
+                       `Trained laboratory technicians and medical assistants on SOP's`,
+                       'Performed all B Positive laboratory technician duties ',
                     ],
                 },
                 { 
@@ -180,11 +169,11 @@ export const resumeData = {
                     end: { year: '2018', month: 'April' }, 
                     location: 'Cherry Hill, NJ',
                     responsibilities: [
+                        'Performed quality control on laboratory equipment including the sealers, centrifuges, and walk-in freezer',
                         'Processed collections, compensated donors, and processed plasma bottles per FDA, SOP, and cGMP requirements',
                         'Extracted samples from plasma bottles for further testing and inspected such samples',
                         'Packed plasma bottles and samples for shipment',
                         'Maintained organization of walk-in freezer used for plasma storage',
-                        'Performed quality control on laboratory equipment and walk-in freezer',
                     ],
                 },
             ],
@@ -199,10 +188,13 @@ export const resumeData = {
                     end: { year: '2017', month: 'Oct.' }, 
                     location: 'Philadelphia, PA',
                     responsibilities: [
-                        'Designed game systems and mechanics',
+                        'Oversaw game design from creation to publication for innovative 2D game',
+                        'Composed, recorded, and produced score for published games',
+                        'Coordinated with sound design vendors to enhance immersion for players',
+                        'Solicited, compiled, and positively utilized user testing feedback',
+                        'Designed game systems and mechanics for three games',
                         'Created graphic and audio assets for games',
                         'Developed games for Android, iOS, and PC',
-                        'Published games for Android',
                     ]
                 },
             ],
@@ -217,13 +209,11 @@ export const resumeData = {
                     end: { year: '2013', month: 'February' }, 
                     location: 'Bridgeport, NJ',
                     responsibilities: [
-                        'Traveled to customer sites to pick up hazardous waste',
-                        'Prepared paperwork for transportation of hazardous waste',
-                        'Segregated waste by hazard class for lab packs',
-                        'Determined all applicable EPA waste codes for lab pack items',
-                        'Consolidated waste into bulk containers',
+                        'Managed hazardous waste transportation and disposal for more than 30 sites',
+                        'Acted as lead chemist on high profile sites; recognized for lowest safety violations and overall professionalism',
+                        'Prepared paperwork for transportation of hazardous waste Segregated waste by hazard class for lab packs',
+                        'Determined all applicable EPA waste codes for lab pack items Consolidated waste into bulk containers',
                         'Pumped waste out of bulk containers with vacuum tanker trucks',
-                        'Established strong working relationships with customers',
                     ],
                 },
             ],
@@ -238,23 +228,14 @@ export const resumeData = {
                     end: { year: '2012', month: 'February' }, 
                     location: 'Atlanta, GA',
                     responsibilities: [
-                        'Collected and classified chemical waste by EPA waste codes for disposal',
-                        'Collected and processed radioactive waste for decay and disposal',
-                        'Performed weekly radiation contamination surveys in radioactive waste areas',
-                        'Performed weekly inspections of multiple hazardous waste facilities',
-                        'Responded to emergency calls for laboratory spills, exposures, etc',
-                        'Managed emergency response equipment inventories',
                         'Created an emergency preparedness analysis program using Visual Basic',
-                        'Certified chemical fume hoods for sufficient airflow',
-                        'Created dynamic database for fume hood data using Visual Basic and Excel',
-                        'Surveyed incoming packages of radioactive materials for contamination',
-                        'Started acid consolidation/neutralization program to save money on lab packs',
+                        'Collected and classified chemical waste by EPA waste codes for disposal',
+                        'Oversaw the collection and processing of radioactive waste for decay and disposal',
+                        'Served in on-call function for emergency response with laboratory spills and exposures.',
+                        'Performed weekly radiation contamination surveys and weekly inspections for 8 radioactive waste facilities',
                     ],
                 },
             ],
         },
     ],
-    /*
-    
-    */
 }
