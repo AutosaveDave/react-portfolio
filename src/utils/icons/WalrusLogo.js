@@ -1,6 +1,5 @@
 import React from "react";
 import { SvgIcon } from "@mui/material";
-import { createSvgIcon } from '@mui/material/utils';
 import { ReactComponent as WalrusLogoSvg } from './walrusicon-transparent.svg';
 
 export default function WalrusLogo( { hMirror } ) {

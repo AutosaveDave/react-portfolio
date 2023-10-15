@@ -47,7 +47,7 @@ function TitleNavBar(props) {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href="https://autosavedave.github.io/react-portfolio/"
             sx={{
               mr: 2,
               ml: 1,
