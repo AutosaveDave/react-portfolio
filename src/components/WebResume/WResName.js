@@ -7,7 +7,7 @@ const WResName = ( { _name, _tagline } ) => {
         justifyContent='center'
     >
       <div style={{ height:'6.5em' }} />
-      <Box border='2px solid black' backgroundColor='text.primary' color='black' 
+      <Box border='2px solid black' backgroundColor='white' color='black' 
           height='8em'  alignContent='center'
           my={3} py={2} mx={2} overflow='hidden'
       >
