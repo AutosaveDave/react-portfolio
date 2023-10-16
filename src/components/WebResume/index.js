@@ -16,10 +16,14 @@ const WebResume = () => {
       >
         <WResName _name={ resumeData.fullName } _tagline={ resumeData.tagline }/>
       </Box>
-      <Box max-width="lg" height='100%' >
-        <Grid container height='100%' width='100%' >
-          <Grid item xs={5} md={4} lg={3}>
-            <Box height='100%' backgroundColor='#cccccc' pr={1} pl={2} pb={0}>
+      <Box height='100%' width='100%'>
+        <Grid container height='100%' width='100%' 
+            sx={{ flexDirection: { xs: 'column', sm: 'row' } }} 
+        >
+          <Grid item xs={12} md={4} lg={3}>
+            <Box height='100%' backgroundColor='#cccccc' pb={0}
+                sx={{ pr: { xs:1, sm:1 }, pl: { xs:1, sm:1, md:2 } }}
+            >
               <Box height='15em' />
               <Stack spacing={2}>
                 <WResContact contact={ resumeData.contact }/>
@@ -27,9 +31,11 @@ const WebResume = () => {
               </Stack>
             </Box>
           </Grid>
-          <Grid item xs={7} md={8} lg={9}>
-            <Box height='100%' pl={3} pr={2} pb={0}>
-              <Box height='15em' />
+          <Grid item xs={12} md={8} lg={9}>
+            <Box height='100%' pl={3} pr={2} pb={0}
+              sx={{ pr: { xs:1, sm:1, md:2 }, pl: { xs:1, sm:1, md:3 } }}
+            >
+              <Box sx={{ height: { xs: '1.5em', md:'15em' } }} />
               <Stack>
                 <WResStatement statement={ resumeData.statement }/>
                 <WResEducation education={ resumeData.education }/>

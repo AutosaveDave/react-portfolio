@@ -25,7 +25,10 @@ const WResEducation = ( { education } ) => {
     </Box>
   </>);
   return <>
-    <Typography variant="h6" textAlign='start' borderBottom='1px solid black' ml={0} mt={2} mb={1}>EDUCATION</Typography>
+    <Typography variant="h6" borderBottom='1px solid black' 
+        ml={0} mt={2} mb={1}
+        sx={{ textAlign: { xs: 'center', md: 'start' } }}
+    >EDUCATION</Typography>
     <Box ml={0} pl={1} pr={1}>
       { education.map( ( eduItem, i ) => (
         <div key={`education-${ i }`}>

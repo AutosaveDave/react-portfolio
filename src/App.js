@@ -24,7 +24,7 @@ export default function App() {
           ></TitleNavBar>
         </header>
         <main>
-          <Container>
+          <Container width='100%'>
             <Page currentPage = { currentPage }></Page>
           </Container>
         </main>

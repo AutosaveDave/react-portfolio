@@ -23,7 +23,7 @@ export const techIcons = {
     default: (<></>)
 }
 const cIconStyle = { height: '1.2em', width: '1.2em', verticalAlign: 'middle' }
-const cIconSX = { display: { xs: 'none', sm: 'none', md:'inline-block'} }
+const cIconSX = { display: 'inline-block' }
 export const contactIcons = {
     Email: (<EmailIcon style={ cIconStyle } sx={ cIconSX }/>),
     Phone: (<PhoneIcon style={ cIconStyle } sx={ cIconSX }/>),
@@ -45,7 +45,7 @@ export const resumeData = {
         Github: 'github.com/autosavedave',
     },
     // -------------------- BRAND STATEMENT
-    statement:'Experienced scientist and lab manager looking to join your tram as a recently certified FullStack Web Developer with numerous transferrable skills. 20 years of experience making 2D games for PC and mobile have confirmed a lasting interest in this work. Creative thinker with the ability to manage wide-ranging client demands to build innovative, elegant solutions.',
+    statement:'Experienced scientist and lab manager looking to join your team as a recently certified FullStack Web Developer with numerous transferrable skills. 20 years of experience making 2D games for PC and mobile have confirmed a lasting interest in this work. Creative thinker with the ability to manage wide-ranging client demands to build innovative, elegant solutions.',
     //statement: `Full-stack web developer with a B.S. in chemistry from Carnegie Mellon University, a certificate in full stack development from University of Pennsylvania LPS Coding Bootcamp, and over 20 years of experience making 2D games for PC and mobile as a hobby. Always looking for innovative, elegant solutions that take into account future plans for any given project.`,
     // -------------------- TECH SKILLS
     skills: {

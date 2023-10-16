@@ -55,7 +55,10 @@ const WResExperience = ( { experience } ) => {
     ); 
   };
   return ( <>
-    <Typography variant="h6" textAlign='start' borderBottom='1px solid black' ml={0} mt={2} mb={1}>RELATED EXPERIENCE</Typography>
+    <Typography variant="h6" textAlign='start' borderBottom='1px solid black' 
+        ml={0} mt={2} mb={1}
+        sx={{ textAlign: { xs: 'center', md: 'start' } }}
+    >RELATED EXPERIENCE</Typography>
     <Box pb={3} pr={1}>
       { experience.map( ( exp, i ) => (
         <Box key={`exp-item-${ i }`} pt='0.5em' pl={1}>
