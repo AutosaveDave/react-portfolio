@@ -16,7 +16,7 @@ const WResExperience = ( { experience } ) => {
     });
     return result;
   };
-  const ExpItem = ( { _exp } ) => { 
+  const ExpItem = ( { _exp, _expIndex } ) => { 
     const _locationString = getLocations( _exp );
     return (
       <>
@@ -26,7 +26,7 @@ const WResExperience = ( { experience } ) => {
           </Typography>
           <Stack>
             { _exp.titles.map( ( _title, _i ) => ( 
-              <>
+              <div key={`exp-item-${ _expIndex }-title-${ _i }`}>
                 <Box pl={2} pb='0.75em'>
                   <Stack>
                     <Stack direction='row' justifyContent='space-between'>
@@ -36,18 +36,18 @@ const WResExperience = ( { experience } ) => {
                     <Box pl={1} pr={1}>
                       <Stack>
                         { _title.responsibilities.map( ( _resp, i_resp ) => (
-                          <>
+                          <div key={`exp-item-${ _expIndex }-title-${ _i }-resp-${ i_resp }`}>
                             <Stack direction='row' justifyContent='start' py='0.15em' lineHeight='1.2em'>
                               <Typography variant='p' pr={1}>{`• `}</Typography>
                               <Typography variant='p' pr={1}>{ _resp }</Typography>
                             </Stack>
-                          </>
+                          </div>
                         ) ) }
                       </Stack>
                     </Box>
                   </Stack>
                 </Box>
-              </> 
+              </div> 
             ) ) }
           </Stack>
         </Box>
@@ -62,7 +62,7 @@ const WResExperience = ( { experience } ) => {
     <Box pb={3} pr={1}>
       { experience.map( ( exp, i ) => (
         <Box key={`exp-item-${ i }`} pt='0.5em' pl={1}>
-          <ExpItem _exp={exp}/>
+          <ExpItem _exp={exp} _expIndex={i}/>
         </Box>
       ) ) }
     </Box>

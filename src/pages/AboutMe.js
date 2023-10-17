@@ -9,7 +9,7 @@ const AboutMe = () => {
             <br/>
             <Typography variant="body1">My name is Dave, and I write code.</Typography>
             <br/>
-            <Typography variant="body1" textAlign='start'>
+            <Typography variant="body1" textAlign='justify'>
               Full-stack web developer with a B.S. in chemistry from Carnegie Mellon University who has been making 2D games for PC and mobile as a hobby for over 20 years. 
               Recently earned a certificate in full stack development from University of Pennsylvania LPS Coding Bootcamp and honed new skills in JavaScript, CSS, React.js, and responsive web design. 
               Always looks for innovative, elegant solutions that take into account future plans for any given project. 
