@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5b63aa18.css",
-    "main.js": "/react-portfolio/static/js/main.5c78528b.js",
+    "main.js": "/react-portfolio/static/js/main.30e4319b.js",
     "static/media/Whisps-html-screenshot4B.png": "/react-portfolio/static/media/Whisps-html-screenshot4B.ea8f234d3848471c6958.png",
+    "static/media/AutosaveDaveResume.pdf": "/react-portfolio/static/media/AutosaveDaveResume.1775956dc03eca9d2607.pdf",
     "static/media/map-editor-screenshot.png": "/react-portfolio/static/media/map-editor-screenshot.f1543ac6292409241259.png",
     "static/media/WDscreenshot.png": "/react-portfolio/static/media/WDscreenshot.faf1c853213dfeb94b25.png",
     "static/media/walrusicon-transparent.svg": "/react-portfolio/static/media/walrusicon-transparent.10657d23e30aea06473c71671297936f.svg",
@@ -10,10 +11,10 @@
     "static/media/Shield_of_the_University_of_Pennsylvania.svg": "/react-portfolio/static/media/Shield_of_the_University_of_Pennsylvania.3833c0607c1973d60ddc3da3b8e4626f.svg",
     "index.html": "/react-portfolio/index.html",
     "main.5b63aa18.css.map": "/react-portfolio/static/css/main.5b63aa18.css.map",
-    "main.5c78528b.js.map": "/react-portfolio/static/js/main.5c78528b.js.map"
+    "main.30e4319b.js.map": "/react-portfolio/static/js/main.30e4319b.js.map"
   },
   "entrypoints": [
     "static/css/main.5b63aa18.css",
-    "static/js/main.5c78528b.js"
+    "static/js/main.30e4319b.js"
   ]
 }
