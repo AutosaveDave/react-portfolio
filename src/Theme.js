@@ -198,6 +198,22 @@ const themeOptions = {
             }
           },
         },
+        {
+          props: { variant: 'resume'},
+          style: {
+            color: '#ffffff', 
+            borderRadius: '0.5em',
+            border: '1px solid',
+            borderColor: themeColors.secondary.light,
+            backgroundColor: themeColors.secondary.main,
+            '&:hover': {
+              backgroundColor: themeColors.secondary.light,
+              border: '1px solid',
+              borderColor: themeColors.primary.main,
+              color: themeColors.primary.light,
+            }
+          },
+        },
       ],
     },
     MuiChip: {

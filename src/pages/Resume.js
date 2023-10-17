@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Paper, Box } from "@mui/material";
+import { Container, Button, Box } from "@mui/material";
 import WebResume from "../components/WebResume";
+import WResButtons from "../components/WebResume/WResButtons";
 
 const Resume = () => {
   return <>
@@ -11,6 +12,7 @@ const Resume = () => {
         <WebResume/>
       </Box>
     </Container>
+    <WResButtons/>
   </>;
 }
 
