@@ -7,7 +7,7 @@ const WResEducation = ( { education } ) => {
       <Stack direction='row' alignItems='center'>
         <Box height='2.5em' width='2.5em' minWidth='2.5em' minHeight='2.5em' 
             textAlign='center' pr={2}
-            sx={{ display: { xs: 'none', md:'inline-block' } }}
+            sx={{ display: { xs: 'none', sm:'inline-block' } }}
         >
           { _eduItem.seal }
         </Box>
