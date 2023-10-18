@@ -45,7 +45,7 @@ export const resumeData = {
         Github: 'github.com/autosavedave',
     },
     // -------------------- BRAND STATEMENT
-    statement:'Experienced scientist and lab manager looking to join your team as a recently certified FullStack Web Developer with numerous transferrable skills. 20 years of experience making 2D games for PC and mobile have confirmed a lasting interest in this work. Creative thinker with the ability to manage wide-ranging client demands to build innovative, elegant solutions.',
+    statement:'Experienced scientist and lab manager looking to join your team as a recently certified full-stack web developer with numerous transferable skills. 20 years of experience making 2D games for PC and mobile have confirmed a lasting interest in this work. Creative thinker with the ability to manage wide-ranging client demands to build innovative, elegant solutions.',
     //statement: `Full-stack web developer with a B.S. in chemistry from Carnegie Mellon University, a certificate in full stack development from University of Pennsylvania LPS Coding Bootcamp, and over 20 years of experience making 2D games for PC and mobile as a hobby. Always looking for innovative, elegant solutions that take into account future plans for any given project.`,
     // -------------------- TECH SKILLS
     skills: {
@@ -99,7 +99,7 @@ export const resumeData = {
         {
             company: 'GlaxoSmithKline',
             titles: [
-                { 
+                {
                     title: 'Quality Assurance Inspector', 
                     date: 'Jan. 2020 - May 2020',
                     start: { year: '2020', month: 'January' }, 
@@ -141,10 +141,10 @@ export const resumeData = {
                     responsibilities: [
                         'Directly supervised 70-80 full-time medical professionals and administrative staff',
                         'Oversaw the interviewing, hiring, and onboarding of all staff positions',
-                        'Managed multiple aspects of staff operations, schedules, training, and performance reviews',
+                        'Managed staff operations, schedules, training, and performance reviews',
                         'Created Excel VBA macro to simplify and expedite review of plasma collection records',
                         'Handled positive donor test results and counseled donors on positive results',
-                        'Reviewed records to ensure FDA, SOP, and cGMP compliance',
+                        'Reviewed records to ensure regulatory, SOP, and cGMP compliance',
                     ],
                 },
                 { 
@@ -155,7 +155,7 @@ export const resumeData = {
                     location: 'Cherry Hill, NJ',
                     responsibilities: [
                        'Supervised 12 laboratory technicians',
-                       'Inspected cases of product in accordance regulatory requirements before shipment',
+                       'Inspected cases of product in accordance with regulatory requirements before shipment',
                        'Documented incidents and deviations in the NextGen issue tracking system',
                        'Worked with QA and management to implement improvements in laboratory efficiency',
                        `Trained laboratory technicians and medical assistants on SOP's`,
@@ -189,8 +189,8 @@ export const resumeData = {
                     location: 'Philadelphia, PA',
                     responsibilities: [
                         'Oversaw game design from creation to publication for innovative 2D game',
-                        'Composed, recorded, and produced music for published games',
-                        'Solicited, compiled, and positively utilized user testing feedback',
+                        'Composed, recorded, and produced music for games',
+                        'Solicited, compiled, and implemented user testing feedback',
                         'Designed game systems and mechanics for three games',
                         'Created graphic and audio assets for games',
                         'Developed games for Android, iOS, HTML5, and PC',
@@ -209,7 +209,7 @@ export const resumeData = {
                     location: 'Bridgeport, NJ',
                     responsibilities: [
                         'Managed hazardous waste transportation and disposal for more than 30 sites',
-                        'Acted as lead lab pack chemist on high profile sites; recognized for following site safety standards professionalism',
+                        'Acted as lead lab pack chemist on high profile sites; recognized for safe practices and professionalism',
                         'Segregated hazardous waste by hazard class for lab packs',
                         'Prepared paperwork for transportation of hazardous waste', 
                         'Determined all applicable DOT and EPA waste codes for lab pack items',
@@ -231,7 +231,7 @@ export const resumeData = {
                         'Created an emergency preparedness analysis Excel VBA macro',
                         'Collected and classified chemical waste by DOT and EPA waste codes for disposal',
                         'Oversaw the collection and processing of radioactive waste for decay and disposal',
-                        'Served in on-call function for emergency response with laboratory spills and exposures',
+                        'Served in on-call role for emergency response with spills and exposures',
                         'Performed weekly radiation contamination surveys and weekly inspections for 8 hazardous waste facilities',
                     ],
                 },
